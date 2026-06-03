@@ -6,13 +6,17 @@ import patientRoutes from "./routes/patient.routes.js";
 import queueRoutes from "./routes/queue.routes.js";
 import appointmentRoutes from "./routes/appointment.routes.js";
 import consultationRoutes from "./routes/consultation.routes.js";
-
+import serviceRoutes from "./routes/service.routes.js";
+import invoiceRoutes from "./routes/invoice.routes.js";
+import paymentRoutes from "./routes/payment.routes.js";
+import reportRoutes from "./routes/report.routes.js";
+import syncRoutes from "./routes/sync.routes.js";
+import { apiLimiter } from "./middleware/rateLimit.js";
+import { logger } from "./middleware/logger.js";
 
 
 const app = express();
-
-
-
+app.use(logger);
 
 app.use(cors());
 
@@ -37,6 +41,28 @@ app.use(
   "/api/consultations",
   consultationRoutes
 );
+app.use(
+  "/api/services",
+  serviceRoutes
+);
+
+app.use(
+  "/api/invoices",
+  invoiceRoutes
+);
+
+app.use(
+  "/api/payments",
+  paymentRoutes
+);
+
+app.use("/api/reports", reportRoutes);
+
+app.use("/api/sync", syncRoutes);
+
+// Apply rate limiter to all API routes
+app.use("/api", apiLimiter);
+
 
 
 app.get("/", (req, res) => {

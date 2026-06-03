@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const patientSchema = new mongoose.Schema(
   {
     patientId: {
@@ -52,6 +53,9 @@ const patientSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
+patientSchema.index({ firstName: 1 });
+patientSchema.index({ lastName: 1 });
 
 export default mongoose.model(
   "Patient",

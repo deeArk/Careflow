@@ -6,6 +6,7 @@ import {
   bookAppointment,
   getAppointments,
   updateAppointment,
+  weeklyAppointments,
 } from "../controllers/appointment.controller.js";
 
 const router = express.Router();
@@ -43,6 +44,18 @@ router.patch(
     "Admin"
   ),
   updateAppointment
+);
+
+// get weekly appointments
+router.get(
+  "/week",
+  authenticate,
+  authorize(
+    "Admin",
+    "Doctor",
+    "Receptionist"
+  ),
+  weeklyAppointments
 );
 
 export default router;

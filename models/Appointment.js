@@ -42,6 +42,9 @@ appointmentSchema.index(
   { unique: true }
 );
 
+
+appointmentSchema.index({ patient: 1 });
+
 export default mongoose.model(
   "Appointment",
   appointmentSchema

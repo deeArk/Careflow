@@ -26,34 +26,15 @@ export const createPatient =
 
     return patient;
   };
-  export const searchPatients =
-  async (searchTerm) => {
-    return Patient.find({
-      $or: [
-        {
-          firstName: {
-            $regex: searchTerm,
-            $options: "i",
-          },
-        },
-        {
-          lastName: {
-            $regex: searchTerm,
-            $options: "i",
-          },
-        },
-        {
-          phone: {
-            $regex: searchTerm,
-            $options: "i",
-          },
-        },
-        {
-          patientId: {
-            $regex: searchTerm,
-            $options: "i",
-          },
-        },
-      ],
-    });
-  };
+  export const searchPatients = async (searchTerm) => {
+  return Patient.find({
+    $or: [
+      { firstName: { $regex: searchTerm, $options: "i" } },
+      { lastName: { $regex: searchTerm, $options: "i" } },
+      { phone: { $regex: searchTerm, $options: "i" } },
+      { patientId: { $regex: searchTerm, $options: "i" } },
+    ],
+  })
+    .select("firstName lastName phone patientId")
+    .lean();
+};

@@ -22,3 +22,17 @@ export const createAppointment = async (
 
   return appointment;
 };
+export const getWeeklyAppointments =
+  async (startDate, endDate) => {
+    return await Appointment.find({
+      date: {
+        $gte: startDate,
+        $lte: endDate,
+      },
+    })
+      .populate(
+        "patient",
+        "firstName lastName phone"
+      )
+      .lean();
+  };

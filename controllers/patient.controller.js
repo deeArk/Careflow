@@ -29,7 +29,7 @@ export const registerPatient = async (req, res) => {
     const patient =
       await Patient.findById(
         req.params.id
-      );
+      ).lean();
 
     if (!patient) {
       return res.status(404).json({

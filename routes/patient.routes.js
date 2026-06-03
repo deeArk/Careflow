@@ -59,3 +59,12 @@ router.patch(
   ),
   updatePatient
 );
+import { validate } from "../middleware/validate.js";
+import { patientSchema } from "../validators/patient.validator.js";
+
+router.post(
+  "/",
+  authenticate,
+  validate(patientSchema),
+  registerPatient
+);

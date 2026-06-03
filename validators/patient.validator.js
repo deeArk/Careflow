@@ -2,6 +2,15 @@ import {
   body,
 } from "express-validator";
 
+import { z } from "zod";
+
+export const patientSchema = z.object({
+  name: z.string().min(2),
+  phone: z.string().min(10),
+  gender: z.enum(["male", "female"]),
+  age: z.number().min(0).max(120),
+});
+
 export const patientValidation =
   [
     body("firstName")
