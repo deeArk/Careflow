@@ -3,6 +3,7 @@ import Patient from "../models/Patient.js";
 import {
   createPatient,
   searchPatients,
+  getAllPatients
 } from "../services/patient.service.js";
 
 // Register Patient
@@ -93,3 +94,15 @@ export const registerPatient = async (req, res) => {
       });
     }
   };
+  export const getPatients = async (
+  req,
+  res
+) => {
+  const patients =
+    await getAllPatients();
+
+  res.status(200).json({
+    success: true,
+    data: patients,
+  });
+};

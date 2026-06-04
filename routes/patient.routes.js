@@ -9,6 +9,7 @@ import {
   getPatient,
   searchPatient,
   updatePatient,
+  getPatients
 } from "../controllers/patient.controller.js";
 
 const router =
@@ -34,6 +35,17 @@ router.get(
     "Admin"
   ),
   searchPatient
+);
+router.get(
+  "/",
+  authenticate,
+  authorize(
+    "Receptionist",
+    "Nurse",
+    "Doctor",
+    "Admin"
+  ),
+  getPatients
 );
 
 router.get(

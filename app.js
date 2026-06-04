@@ -24,44 +24,44 @@ app.use(express.json());
 
 app.use(morgan("dev"));
 app.use(
-  "/api/auth",
+  "/careflow/auth",
   authRoutes
 );
 app.use(
-  "/api/patients",
+  "/careflow/patients",
   patientRoutes
 );
-app.use("/api/queue", queueRoutes);
+app.use("/careflow/queue", queueRoutes);
 app.use(
-  "/api/appointments",
+  "/careflow/appointments",
   appointmentRoutes
 );
 
 app.use(
-  "/api/consultations",
+  "/careflow/consultations",
   consultationRoutes
 );
 app.use(
-  "/api/services",
+  "/careflow/services",
   serviceRoutes
 );
 
 app.use(
-  "/api/invoices",
+  "/careflow/invoices",
   invoiceRoutes
 );
 
 app.use(
-  "/api/payments",
+  "/careflow/payments",
   paymentRoutes
 );
 
-app.use("/api/reports", reportRoutes);
+app.use("/careflow/reports", reportRoutes);
 
-app.use("/api/sync", syncRoutes);
+app.use("/careflow/sync", syncRoutes);
 
 // Apply rate limiter to all API routes
-app.use("/api", apiLimiter);
+app.use("/careflow", apiLimiter);
 
 
 

@@ -38,3 +38,10 @@ export const createPatient =
     .select("firstName lastName phone patientId")
     .lean();
 };
+export const getAllPatients = async () => {
+  return await Patient.find()
+    .select(
+      "patientId firstName lastName phone gender"
+    )
+    .lean();
+};
