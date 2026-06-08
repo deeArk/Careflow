@@ -11,6 +11,7 @@ import invoiceRoutes from "./routes/invoice.routes.js";
 import paymentRoutes from "./routes/payment.routes.js";
 import reportRoutes from "./routes/report.routes.js";
 import syncRoutes from "./routes/sync.routes.js";
+import staffRoutes from "./routes/staff.routes.js";
 import { apiLimiter } from "./middleware/rateLimit.js";
 import { logger } from "./middleware/logger.js";
 
@@ -23,6 +24,10 @@ app.use(cors());
 app.use(express.json());
 
 app.use(morgan("dev"));
+
+// Apply rate limiter to all API routes
+app.use("/careflow", apiLimiter);
+
 app.use(
   "/careflow/auth",
   authRoutes
@@ -60,8 +65,7 @@ app.use("/careflow/reports", reportRoutes);
 
 app.use("/careflow/sync", syncRoutes);
 
-// Apply rate limiter to all API routes
-app.use("/careflow", apiLimiter);
+app.use("/careflow/staff", staffRoutes);
 
 
 

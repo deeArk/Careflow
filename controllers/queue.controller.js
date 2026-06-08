@@ -1,5 +1,5 @@
 import Queue from "../models/Queue.js";
-import { addToQueue } from "../services/queue.service.js";
+import { addToQueue, callPatientInQueue } from "../services/queue.service.js";
 
 export const addPatientToQueue = async (
   req,
@@ -57,3 +57,25 @@ export const updateQueueStatus = async (
     data: queue,
   });
 };
+
+export const callPatient =
+  async (req, res) => {
+    try {
+      const data =
+        await callPatientInQueue(
+          req.params.id
+        );
+
+      res.status(200).json({
+        success: true,
+        message:
+          "Patient called successfully",
+        data,
+      });
+    } catch (error) {
+      res.status(400).json({
+        success: false,
+        message: error.message,
+      });
+    }
+  };

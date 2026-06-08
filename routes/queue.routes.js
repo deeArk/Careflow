@@ -6,7 +6,9 @@ import {
   addPatientToQueue,
   getQueueToday,
   updateQueueStatus,
+  callPatient,
 } from "../controllers/queue.controller.js";
+
 
 const router = express.Router();
 
@@ -30,5 +32,13 @@ router.patch(
   authorize("Nurse", "Doctor", "Admin"),
   updateQueueStatus
 );
-
+router.patch(
+  "/:id/call",
+  authenticate,
+  authorize(
+    "Receptionist",
+    "Admin"
+  ),
+  callPatient
+);
 export default router;

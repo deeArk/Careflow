@@ -13,6 +13,7 @@ const queueSchema = new mongoose.Schema(
       enum: [
         "waiting",
         "in-consultation",
+        "called",
         "done",
       ],
       default: "waiting",

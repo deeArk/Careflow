@@ -4,6 +4,7 @@ import authenticate from "../middleware/auth.middleware.js";
 
 import authorize from "../middleware/role.middleware.js";
 
+
 import {
   registerPatient,
   getPatient,
@@ -12,16 +13,19 @@ import {
   getPatients
 } from "../controllers/patient.controller.js";
 
-const router =
-  express.Router();
+import { validate } from "../middleware/validate.js";
+import { patientSchema } from "../validators/patient.validator.js";
 
-  router.post(
+const router = express.Router();
+
+router.post(
   "/",
   authenticate,
   authorize(
     "Receptionist",
     "Admin"
   ),
+  validate(patientSchema),
   registerPatient
 );
 
@@ -60,7 +64,7 @@ router.get(
   getPatient
 );
 
-export default router;
+
 
 router.patch(
   "/:id",
@@ -71,12 +75,17 @@ router.patch(
   ),
   updatePatient
 );
-import { validate } from "../middleware/validate.js";
-import { patientSchema } from "../validators/patient.validator.js";
+
+
 
 router.post(
   "/",
   authenticate,
+  authorize(
+    "Receptionist",
+    "Admin"
+  ),
   validate(patientSchema),
   registerPatient
 );
+export default router;

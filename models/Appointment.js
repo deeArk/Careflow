@@ -32,6 +32,11 @@ const appointmentSchema = new mongoose.Schema(
       ],
       default: "scheduled",
     },
+    service: {
+     type: mongoose.Schema.Types.ObjectId,
+     ref: "Service",
+     required: true,
+},
   },
   { timestamps: true }
 );
