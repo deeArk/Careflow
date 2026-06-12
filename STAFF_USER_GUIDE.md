@@ -1,22 +1,24 @@
-#  CareFlow Staff Help Center
+#  CareFlow Staff User Guide
 
-CareFlow is a clinical workflow system designed to manage patient flow from registration to completion.
+CareFlow is a clinical workflow management platform that enables healthcare providers to efficiently manage patient flow, from registration and assessment to treatment and care completion.
 
-All patients follow this flow:
+The system is designed to streamline healthcare operations, improve patient experience, and ensure that every patient follows a structured clinical workflow.
 
-**Registration → Queue → Call Patient → Consultation → Vitals → Services → Invoice → Payment → Completion**
 
----
+# Patient Workflow
+All patients follow this workflow:
 
-#  Registration
+## Registration → Queue managment → Call Patient → vitals → Consultation→ Services → Invoice → Payment → Completion
+Each stage must be completed before the patient can proceed to the next step.
 
-<details>
-<summary><b>Register a New Patient</b></summary>
+# Registration
+
+# Register a New Patient</b></summary>
 
 ### Steps:
 1. Open **Registration**
 2. Click **New Patient**
-3. Enter patient details:
+3. Enter patient's  details:
    - Full Name  
    - Date of Birth  
    - Gender  
@@ -24,10 +26,8 @@ All patients follow this flow:
    - Address (optional)
 4. Click **Save**
 5. System creates patient profile
-
+   
 </details>
-
-<details>
 <summary><b>Search Patient</b></summary>
 
 ### Steps:
@@ -39,8 +39,9 @@ All patients follow this flow:
 </details>
 
 ---
-
 #  Queue Management
+
+# Add patient to the Queue
 
 <details>
 <summary><b>Add Patient to Queue</b></summary>
@@ -55,6 +56,8 @@ All patients follow this flow:
 
 </details>
 
+# View Queue Status
+
 <details>
 <summary><b>View Queue Status</b></summary>
 
@@ -64,11 +67,8 @@ All patients follow this flow:
    - Waiting  
    - Called  
    - In Consultation  
-   - Completed  
-
-</details>
-
----
+   - Completed
+   - 
 
 #  Call Patient
 
@@ -96,20 +96,6 @@ All patients follow this flow:
 
 ---
 
-#  Consultation
-
-<details>
-<summary><b>Start Consultation</b></summary>
-
-### Steps:
-1. Select patient from Called list
-2. Click **Start Consultation**
-3. Patient status changes to **In Consultation**
-
-</details>
-
----
-
 #  Vitals
 
 <details>
@@ -126,6 +112,20 @@ All patients follow this flow:
    - Oxygen Saturation  
    - Weight  
 5. Click **Save**
+
+</details>
+
+---
+
+#  Consultation
+
+<details>
+<summary><b>Start Consultation</b></summary>
+
+### Steps:
+1. Select patient from Called list
+2. Click **Start Consultation**
+3. Patient status changes to **In Consultation**
 
 </details>
 
@@ -292,10 +292,10 @@ All patients follow this flow:
 
 ---
 
-#  System Rule
+## System Rules
 
 All patients must follow:
 
-**Registration → Queue → Call → Consultation → Vitals → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
-No step should be skipped.
+no steps should be skipped. unless explicity authorized by a system administrator or onfigure workfloe policy.
