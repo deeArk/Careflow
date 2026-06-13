@@ -1,10 +1,10 @@
-# ADMIN\_GUIDE
+# Admin Guide
 
 ## Patient Follow-up Reminder
 
 | Field          | Details       |
 | -------------- | ------------- |
-| **Date**       | June 11, 2026 |
+| **Date**       | June 13, 2026 |
 | **Created By** | Admin User    |
 | **Status**     | Active        |
 
