@@ -10,6 +10,12 @@ CareFlow is an **outpatient-only healthcare management system** designed to mana
 CareFlow does **NOT** support inpatient admission, ward management, or hospitalisation workflows.
 {% endhint %}
 
+### Quick links
+
+* [Guides](<../README (1).md>)
+* [Staff User Guide](../readme/staff-user-guide.md)
+* [Admin Guide](../readme/admin_guide.md)
+
 ## Frequently Asked Questions (FAQ)
 
 <details>
@@ -100,7 +106,7 @@ If you cannot sign in and suspect the account was removed, contact an administra
 
 <summary>What is the patient workflow in CareFlow?</summary>
 
-**Registration → Queue → Appointment → Consultation → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call Patient → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
 </details>
 
@@ -108,7 +114,7 @@ If you cannot sign in and suspect the account was removed, contact an administra
 
 <summary>Can steps be skipped in the workflow?</summary>
 
-No. The system enforces structured workflow stages. Authorized staff may override in exceptional cases.
+No. The workflow is structured. Only an authorized administrator or workflow policy can allow an exception.
 
 </details>
 
@@ -153,7 +159,7 @@ Yes. Prescriptions are created during consultation and stored in patient records
 | --------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Patient data not syncing          | Internet interruption or offline mode active          | Reconnect internet, refresh system, and allow auto-sync                                                    |
 | Patient not appearing in queue    | Registration incomplete or not added to queue         | Confirm registration and re-add patient to queue                                                           |
-| Cannot proceed to consultation    | No doctor assigned or queue step incomplete           | Assign doctor and mark patient as “Next in Queue”                                                          |
+| Cannot proceed to consultation    | Patient was not called or a queue step is incomplete  | Open **Queue Dashboard**, click **Call**, then start consultation                                          |
 | Invoice not generated             | No services added during consultation                 | Add services or reopen consultation                                                                        |
 | System is slow or lagging         | Weak internet or large unsynced data                  | Use stable network and sync in smaller batches                                                             |
 | Offline data not appearing online | Sync not completed after reconnecting                 | Stay online and refresh system after a few minutes                                                         |

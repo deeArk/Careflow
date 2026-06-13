@@ -4,6 +4,8 @@ CareFlow is a clinical workflow management platform that enables healthcare prov
 
 The system is designed to streamline healthcare operations, improve patient experience, and ensure that every patient follows a structured clinical workflow.
 
+Use the [Support center](../support/help_center.md) for common issues and quick answers.
+
 All patients follow this flow:
 
 **Registration → Queue → Call Patient → Vitals → Consultation → Services → Invoice → Payment → Completion**
@@ -710,6 +712,13 @@ The system opens the **Dashboard** for your role.
 {% endstepper %}
 
 </details>
+
+***
+
+## More help
+
+* Use the [Support center](../support/help_center.md) for troubleshooting and FAQs.
+* Use the [Admin Guide](admin_guide.md) for account and access tasks.
 
 ***
 

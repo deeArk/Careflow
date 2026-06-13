@@ -4,6 +4,10 @@ CareFlow administrators manage access, users, and system oversight.
 
 Use this guide for day-to-day admin tasks.
 
+Use the [Support center](../support/help_center.md) for common issues and quick answers.
+
+Use the [Staff User Guide](staff-user-guide.md) for day-to-day patient workflows.
+
 ***
 
 ## Login
