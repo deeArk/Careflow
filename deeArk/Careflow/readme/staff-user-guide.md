@@ -1,4 +1,4 @@
-# STAFF\_USER\_GUIDE
+# Staff User Guide
 
 CareFlow is a clinical workflow management platform that enables healthcare providers to efficiently manage patient flow, from registration and assessment to treatment and care completion.
 
@@ -7,6 +7,71 @@ The system is designed to streamline healthcare operations, improve patient expe
 All patients follow this flow:
 
 **Registration → Queue → Call Patient → Vitals → Consultation → Services → Invoice → Payment → Completion**
+
+***
+
+## Login
+
+<details>
+
+<summary>Sign in to CareFlow</summary>
+
+{% stepper %}
+{% step %}
+## Open the CareFlow login page
+{% endstep %}
+
+{% step %}
+## Enter your username
+{% endstep %}
+
+{% step %}
+## Enter your password
+{% endstep %}
+
+{% step %}
+## Click **Login**
+{% endstep %}
+
+{% step %}
+## Open your dashboard
+
+The system loads features based on your role.
+{% endstep %}
+{% endstepper %}
+
+</details>
+
+<details>
+
+<summary>Cannot log in</summary>
+
+* Check your username and password.
+* Confirm your internet connection.
+* Confirm your account has not been removed by an administrator.
+* Contact the system administrator if access fails.
+
+</details>
+
+<details>
+
+<summary>Sign out</summary>
+
+{% stepper %}
+{% step %}
+## Open your profile menu
+{% endstep %}
+
+{% step %}
+## Click **Logout**
+{% endstep %}
+
+{% step %}
+## Return to the login page
+{% endstep %}
+{% endstepper %}
+
+</details>
 
 ***
 
@@ -491,36 +556,27 @@ All patients follow this flow:
 
 ***
 
-## User Management
+## Access Support
 
 <details>
 
-<summary>Create Staff User</summary>
+<summary>Request account changes</summary>
 
 {% stepper %}
 {% step %}
-## Open Settings
+## Contact the system administrator
 {% endstep %}
 
 {% step %}
-## Click **Add User**
+## Request the required update
+
+* New staff account
+* Role change
+* Restore removed account
 {% endstep %}
 
 {% step %}
-## Enter staff details
-{% endstep %}
-
-{% step %}
-## Assign role
-
-* Doctor
-* Nurse
-* Receptionist
-* Admin
-{% endstep %}
-
-{% step %}
-## Save user
+## Confirm access after the update
 {% endstep %}
 {% endstepper %}
 
@@ -558,4 +614,4 @@ All patients must follow:
 
 **Registration → Queue → Call → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
-No step should be skipped unless explicity authorized by a system administrator or onfigure workfloe policy..
+No step should be skipped unless explicitly authorized by a system administrator or configured workflow policy.

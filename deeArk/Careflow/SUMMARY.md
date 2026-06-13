@@ -1,8 +1,13 @@
 # Table of contents
 
-* [Page](README.md)
-  * [STAFF\_USER\_GUIDE](readme/staff_user_guide.md)
-  * [HELP\_CENTER](readme/help_center.md)
-  * [README](readme/readme.md)
-  * [ADMIN\_GUIDE](readme/admin_guide.md)
-* [API](api.md)
+* [API](README.md)
+  * [README](api/readme.md)
+  * [API Overview](api/readme-1.md)
+  * [Release Notes](api/release-notes.md)
+* [Guides](<README (1).md>)
+  * [Staff User Guide](readme/staff-user-guide.md)
+  * [Admin Guide](readme/admin_guide.md)
+
+## Support
+
+* [Support center](support/help_center.md)

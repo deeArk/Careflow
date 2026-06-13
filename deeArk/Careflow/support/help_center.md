@@ -62,6 +62,28 @@ The system continues in offline mode. Once internet is restored, data automatica
 
 <details>
 
+<summary>Why can’t I log in?</summary>
+
+Check the following:
+
+* Confirm your username and password are correct.
+* Confirm your internet connection is stable.
+* Confirm your account has not been removed by an administrator.
+
+</details>
+
+<details>
+
+<summary>How do I restore a staff user who was removed?</summary>
+
+An administrator must restore the account from **User Management**.
+
+If you cannot sign in and suspect the account was removed, contact an administrator to restore access.
+
+</details>
+
+<details>
+
 <summary>What is the patient workflow in CareFlow?</summary>
 
 **Registration → Queue → Appointment → Consultation → Services → Invoice → Payment → Completion**
@@ -113,17 +135,19 @@ Yes. Prescriptions are created during consultation and stored in patient records
 
 ### Common Issues & Solutions
 
-| Issue                             | Cause                                         | Solution                                                |
-| --------------------------------- | --------------------------------------------- | ------------------------------------------------------- |
-| Patient data not syncing          | Internet interruption or offline mode active  | Reconnect internet, refresh system, and allow auto-sync |
-| Patient not appearing in queue    | Registration incomplete or not added to queue | Confirm registration and re-add patient to queue        |
-| Cannot proceed to consultation    | No doctor assigned or queue step incomplete   | Assign doctor and mark patient as “Next in Queue”       |
-| Invoice not generated             | No services added during consultation         | Add services or reopen consultation                     |
-| System is slow or lagging         | Weak internet or large unsynced data          | Use stable network and sync in smaller batches          |
-| Offline data not appearing online | Sync not completed after reconnecting         | Stay online and refresh system after a few minutes      |
-| Patient record not found          | Wrong search input or missing registration    | Search using ID/phone or register patient again         |
-| Payment not reflecting            | Transaction delay or network issue            | Refresh payment module and verify status                |
-| Queue not updating                | System delay or offline mode                  | Reconnect internet and refresh dashboard                |
+| Issue                             | Cause                                                  | Solution                                                                                                 |
+| --------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| Patient data not syncing          | Internet interruption or offline mode active           | Reconnect internet, refresh system, and allow auto-sync                                                  |
+| Patient not appearing in queue    | Registration incomplete or not added to queue          | Confirm registration and re-add patient to queue                                                         |
+| Cannot proceed to consultation    | No doctor assigned or queue step incomplete            | Assign doctor and mark patient as “Next in Queue”                                                        |
+| Invoice not generated             | No services added during consultation                  | Add services or reopen consultation                                                                      |
+| System is slow or lagging         | Weak internet or large unsynced data                   | Use stable network and sync in smaller batches                                                           |
+| Offline data not appearing online | Sync not completed after reconnecting                  | Stay online and refresh system after a few minutes                                                       |
+| Patient record not found          | Wrong search input or missing registration             | Search using ID/phone or register patient again                                                          |
+| Payment not reflecting            | Transaction delay or network issue                     | Refresh payment module and verify status                                                                 |
+| Queue not updating                | System delay or offline mode                           | Reconnect internet and refresh dashboard                                                                 |
+| Cannot log in                     | Wrong credentials, poor connection, or account removed | Check credentials, confirm internet access, and verify the account is still active with an administrator |
+| Removed staff user needs access   | Account was removed from the system                    | Ask an administrator to restore the user account from User Management                                    |
 
 ### Support
 
