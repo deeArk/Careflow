@@ -18,7 +18,11 @@ All patients follow this flow:
 
 {% stepper %}
 {% step %}
-## Open the **Login Page**
+## Open the website
+{% endstep %}
+
+{% step %}
+## Select **Login**
 {% endstep %}
 
 {% step %}
@@ -45,12 +49,13 @@ Choose the role assigned to your account.
 * Receptionist / Nurse
 * Doctor / Clinician
 * Cashier
+* Administrator
 {% endstep %}
 
 {% step %}
 ## Open your dashboard
 
-The system opens the **Clinical & Non Clinical Dashboard** for your role.
+The system opens the **Dashboard** for your role.
 {% endstep %}
 {% endstepper %}
 
