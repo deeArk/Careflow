@@ -1,14 +1,18 @@
-# README
+# API overview
 
 ## CareFlow API
 
-> A secure RESTful API for managing healthcare operations, including patient records, appointments, consultations, billing, payments, and reporting.
+A secure REST API for healthcare operations.
+
+***
 
 ### Overview
 
 CareFlow API is a healthcare management backend that enables healthcare facilities to streamline clinical and administrative workflows through a centralized platform.
 
 The API provides secure access to patient management, queue operations, appointment scheduling, consultation records, invoicing, payments, and reporting services using JWT-based authentication and role-based authorization.
+
+***
 
 ### Features
 
@@ -24,6 +28,8 @@ The API provides secure access to patient management, queue operations, appointm
 * Administrative Reporting
 * RESTful API Architecture
 
+***
+
 ### Base URL
 
 ```
@@ -31,6 +37,8 @@ https://careflow-api-4.onrender.com/careflow
 ```
 
 All API endpoints are relative to the base URL.
+
+***
 
 ### Authentication
 
@@ -64,6 +72,8 @@ POST /auth/login
 }
 ```
 
+***
+
 ### Authorization
 
 All endpoints except the login endpoint require authentication.
@@ -81,6 +91,8 @@ Content-Type: application/json
 Authorization: Bearer <JWT_TOKEN>
 ```
 
+***
+
 ### User Roles
 
 | Role         | Description                             |
@@ -90,6 +102,8 @@ Authorization: Bearer <JWT_TOKEN>
 | Nurse        | Patient support and care management     |
 | Receptionist | Registration and appointment management |
 | Cashier      | Billing and payment processing          |
+
+***
 
 ## API Reference
 
@@ -140,6 +154,8 @@ GET /patients/search?term=john
 PATCH /patients/{id}
 ```
 
+***
+
 ### Queue Module
 
 Manage patient queues and waiting lists.
@@ -162,6 +178,8 @@ GET /queue/today
 PATCH /queue/{id}/status
 ```
 
+***
+
 ### Appointment Module
 
 Manage patient appointments.
@@ -178,6 +196,8 @@ POST /appointments
 GET /appointments/week?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD
 ```
 
+***
+
 ### Consultation Module
 
 Manage patient consultation records.
@@ -193,6 +213,8 @@ POST /consultations
 ```http
 GET /consultations/patient/{id}
 ```
+
+***
 
 ### Service Module
 
@@ -222,6 +244,8 @@ PATCH /services/{id}
 DELETE /services/{id}
 ```
 
+***
+
 ### Invoice Module
 
 Manage invoices and billing.
@@ -237,6 +261,8 @@ POST /invoices
 ```http
 GET /invoices/pending
 ```
+
+***
 
 ### Payment Module
 
@@ -258,13 +284,13 @@ POST /payments
 }
 ```
 
+***
+
 ### Reports Module
 
 Administrative reporting endpoints.
 
-{% hint style="info" %}
-Access restricted to Admin users.
-{% endhint %}
+> Access restricted to Admin users.
 
 #### Daily Report
 
@@ -283,6 +309,8 @@ GET /reports/weekly
 ```http
 GET /reports/revenue
 ```
+
+***
 
 ### Standard Response Format
 
@@ -305,6 +333,8 @@ GET /reports/revenue
 }
 ```
 
+***
+
 ### HTTP Status Codes
 
 | Status Code | Description                   |
@@ -316,6 +346,8 @@ GET /reports/revenue
 | 403         | Forbidden                     |
 | 404         | Not Found                     |
 | 500         | Internal Server Error         |
+
+***
 
 ### Frontend Integration Guide
 
@@ -333,6 +365,8 @@ GET /reports/revenue
 Authorization: Bearer <JWT_TOKEN>
 ```
 
+***
+
 ### Security
 
 CareFlow API implements the following security measures:
@@ -343,13 +377,19 @@ CareFlow API implements the following security measures:
 * Input Validation
 * Secure HTTPS Communication
 
+***
+
 ### Version
 
 **Current Version:** v1.0.0
 
+***
+
 ### Support
 
 For technical support, bug reports, or integration assistance, contact the CareFlow development team.
+
+***
 
 ### License
 
