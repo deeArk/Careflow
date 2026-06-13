@@ -7,4 +7,3 @@
   * [STAFF\_USER\_GUIDE](readme/staff_user_guide.md)
 * [API](api.md)
 * [RELEASE\_NOTES (1)](release_notes-1.md)
-* [RELEASE\_NOTES (1)](release_notes-1-1.md)
