@@ -5,7 +5,7 @@
   * [API overview](api/readme-1.md)
   * [Release notes](api/release-notes.md)
 * [Guides](<README (1).md>)
-  * [Staff user guide](readme/staff-user-guide.md)
+  * [Staff User Guide](readme/staff-user-guide.md)
   * [Admin guide](readme/admin_guide.md)
 
 ## Support
