@@ -18,7 +18,7 @@ All patients follow this flow:
 
 {% stepper %}
 {% step %}
-## Open the **Log In Page for Clinical & Non Clinical**
+## Open the **Login Page**
 {% endstep %}
 
 {% step %}
