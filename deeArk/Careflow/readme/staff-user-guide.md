@@ -101,7 +101,7 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Enter patient details
+## Complete **Personal Information**
 
 * Full Name
 * Date of Birth
@@ -111,7 +111,33 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Click **Save**
+## Complete **Emergency Contact**
+
+Enter:
+
+* Contact Name
+* Relationship
+* Phone Number
+{% endstep %}
+
+{% step %}
+## Complete **Additional Information**
+
+Enter:
+
+* Blood Group
+* Genotype
+* Allergies
+{% endstep %}
+
+{% step %}
+## Review **Patient ID Preview**
+
+The patient ID is generated after saving.
+{% endstep %}
+
+{% step %}
+## Click **Save Patient**
 {% endstep %}
 
 {% step %}
@@ -131,11 +157,23 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Enter patient name or phone number
+## Click **Search Patient**
 {% endstep %}
 
 {% step %}
-## Select patient from results
+## Search using patient ID, name, or phone number
+{% endstep %}
+
+{% step %}
+## Review the search results
+
+Confirm you selected the correct patient before opening the record.
+
+Available actions include:
+
+* **View Profile**
+* **Edit Record**
+* **Add to Queue**
 {% endstep %}
 
 {% step %}
@@ -318,7 +356,7 @@ The system opens the **Dashboard** for your role.
 
 ***
 
-## Quick consult
+## Quick Consult
 
 <details>
 
@@ -330,15 +368,43 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Enter symptoms
+## Review or enter the quick consult readings
+
+Enter:
+
+* **BP**
+* **Temperature**
+* **Pulse**
+* **Weight**
 {% endstep %}
 
 {% step %}
-## Add diagnosis
+## Enter **Chief Complaint**
 {% endstep %}
 
 {% step %}
-## Save notes
+## Set the consultation date
+{% endstep %}
+
+{% step %}
+## Add clinical notes
+
+Use the notes field for the consultation summary, diagnosis, or referral note.
+{% endstep %}
+
+{% step %}
+## Save the consult
+
+Choose:
+
+* **Save As Draft**
+* **Save & Complete**
+{% endstep %}
+
+{% step %}
+## Confirm the success message
+
+The system shows **Consultation Saved** and moves the patient to billing when you complete the consult.
 {% endstep %}
 {% endstepper %}
 
@@ -426,7 +492,7 @@ The system opens the **Dashboard** for your role.
 
 ***
 
-## Patient billing
+## Patient Billing
 
 <details>
 
@@ -442,7 +508,15 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Review billable services
+## Review **Current Charges**
+
+Check each billed item before payment.
+{% endstep %}
+
+{% step %}
+## Review **Billing Summary**
+
+Confirm the total amount and any outstanding balance.
 {% endstep %}
 {% endstepper %}
 
@@ -487,6 +561,8 @@ The system opens the **Dashboard** for your role.
 
 {% step %}
 ## Generate the invoice
+
+Use the invoice view to confirm the amount before payment.
 {% endstep %}
 {% endstepper %}
 
@@ -534,23 +610,34 @@ The system opens the **Dashboard** for your role.
 {% endstep %}
 
 {% step %}
-## Open the invoice
+## Open the patient bill
 {% endstep %}
 
 {% step %}
-## Click **Record Payment**
+## Click **Confirm Payment**
 {% endstep %}
 
 {% step %}
 ## Select payment method
+
+Available options include:
+
+* **Bank Transfer**
+* **POS**
+* **Cash**
+* **Mobile App**
 {% endstep %}
 
 {% step %}
 ## Enter amount
+
+Confirm the amount matches the billed total.
 {% endstep %}
 
 {% step %}
 ## Confirm payment
+
+The bill updates after the payment is recorded.
 {% endstep %}
 {% endstepper %}
 
@@ -563,10 +650,6 @@ The system opens the **Dashboard** for your role.
 {% stepper %}
 {% step %}
 ## Open the completed payment
-{% endstep %}
-
-{% step %}
-## Open the **Receipt Delivery Workflow**
 {% endstep %}
 
 {% step %}
