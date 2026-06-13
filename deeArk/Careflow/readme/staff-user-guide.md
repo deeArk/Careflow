@@ -18,11 +18,11 @@ All patients follow this flow:
 
 {% stepper %}
 {% step %}
-## Open the CareFlow login page
+## Open the **Log In Page for Clinical & Non Clinical**
 {% endstep %}
 
 {% step %}
-## Enter your username
+## Enter your email
 {% endstep %}
 
 {% step %}
@@ -30,26 +30,29 @@ All patients follow this flow:
 {% endstep %}
 
 {% step %}
+## Optional: select **Remember me**
+{% endstep %}
+
+{% step %}
 ## Click **Login**
+{% endstep %}
+
+{% step %}
+## Select your role to continue
+
+Choose the role assigned to your account.
+
+* Receptionist / Nurse
+* Doctor / Clinician
+* Cashier
 {% endstep %}
 
 {% step %}
 ## Open your dashboard
 
-The system loads features based on your role.
+The system opens the **Clinical & Non Clinical Dashboard** for your role.
 {% endstep %}
 {% endstepper %}
-
-</details>
-
-<details>
-
-<summary>Cannot log in</summary>
-
-* Check your username and password.
-* Confirm your internet connection.
-* Confirm your account has not been removed by an administrator.
-* Contact the system administrator if access fails.
 
 </details>
 
@@ -83,7 +86,7 @@ The system loads features based on your role.
 
 {% stepper %}
 {% step %}
-## Open **Registration**
+## Open the **New Patient Registration Screen**
 {% endstep %}
 
 {% step %}
@@ -117,7 +120,7 @@ The system loads features based on your role.
 
 {% stepper %}
 {% step %}
-## Open Registration
+## Open the **Patient Search and Retrieval Screen**
 {% endstep %}
 
 {% step %}
@@ -129,7 +132,7 @@ The system loads features based on your role.
 {% endstep %}
 
 {% step %}
-## Open patient profile
+## Open the patient record
 {% endstep %}
 {% endstepper %}
 
@@ -308,13 +311,17 @@ The system loads features based on your role.
 
 ***
 
-## Consultation Notes
+## Quick consult
 
 <details>
 
 <summary>Record Clinical Notes</summary>
 
 {% stepper %}
+{% step %}
+## Open the **Quick Consult Form Screen**
+{% endstep %}
+
 {% step %}
 ## Enter symptoms
 {% endstep %}
@@ -335,6 +342,10 @@ The system loads features based on your role.
 <summary>Prescribe Medication</summary>
 
 {% stepper %}
+{% step %}
+## Open the **Quick Consult Form Screen**
+{% endstep %}
+
 {% step %}
 ## Click **Add Prescription**
 {% endstep %}
@@ -359,6 +370,10 @@ The system loads features based on your role.
 <summary>Request Lab Test</summary>
 
 {% stepper %}
+{% step %}
+## Open the **Quick Consult Form Screen**
+{% endstep %}
+
 {% step %}
 ## Click **Lab Request**
 {% endstep %}
@@ -404,7 +419,47 @@ The system loads features based on your role.
 
 ***
 
-## Invoice
+## Patient billing
+
+<details>
+
+<summary>Open the Patient's Billing Screen</summary>
+
+{% stepper %}
+{% step %}
+## Open the patient record
+{% endstep %}
+
+{% step %}
+## Open **Patient's Billing Screen**
+{% endstep %}
+
+{% step %}
+## Review billable services
+{% endstep %}
+{% endstepper %}
+
+</details>
+
+<details>
+
+<summary>Check the Billing Queue</summary>
+
+{% stepper %}
+{% step %}
+## Open **Billing Queue**
+{% endstep %}
+
+{% step %}
+## Find the patient in the queue
+{% endstep %}
+
+{% step %}
+## Open the patient billing item
+{% endstep %}
+{% endstepper %}
+
+</details>
 
 <details>
 
@@ -412,19 +467,19 @@ The system loads features based on your role.
 
 {% stepper %}
 {% step %}
-## Open patient record
+## Open **Patient's Billing Screen**
 {% endstep %}
 
 {% step %}
-## Click **Create Invoice**
+## Review the patient charges
 {% endstep %}
 
 {% step %}
-## System auto-fills services
+## Click **Invoice**
 {% endstep %}
 
 {% step %}
-## Click **Generate Invoice**
+## Generate the invoice
 {% endstep %}
 {% endstepper %}
 
@@ -464,7 +519,15 @@ The system loads features based on your role.
 
 {% stepper %}
 {% step %}
-## Open Invoice
+## Open **Billing Queue**
+{% endstep %}
+
+{% step %}
+## Select the patient billing record
+{% endstep %}
+
+{% step %}
+## Open the invoice
 {% endstep %}
 
 {% step %}
@@ -492,11 +555,15 @@ The system loads features based on your role.
 
 {% stepper %}
 {% step %}
-## Open payment
+## Open the completed payment
 {% endstep %}
 
 {% step %}
-## Click **Generate Receipt**
+## Open the **Receipt Delivery Workflow**
+{% endstep %}
+
+{% step %}
+## Click **Receipt**
 {% endstep %}
 
 {% step %}
@@ -521,6 +588,39 @@ The system loads features based on your role.
 
 {% step %}
 ## Mark as completed
+{% endstep %}
+{% endstepper %}
+
+</details>
+
+***
+
+## Offline mode
+
+<details>
+
+<summary>Work from the Offline Screen</summary>
+
+{% stepper %}
+{% step %}
+## Open the **Offline Screen**
+{% endstep %}
+
+{% step %}
+## Use the offline screen you need
+
+* Offline Quick Consult Screen
+* Offline Clinical Dashboard
+* Offline Patient Search and Retrieval Screen
+* Offline Billing Screen
+{% endstep %}
+
+{% step %}
+## Reconnect to the internet
+{% endstep %}
+
+{% step %}
+## Confirm data sync after connection returns
 {% endstep %}
 {% endstepper %}
 

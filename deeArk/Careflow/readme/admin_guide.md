@@ -14,11 +14,11 @@ Use this guide for day-to-day admin tasks.
 
 {% stepper %}
 {% step %}
-## Open the CareFlow login page
+## Open the **Log In Page for Clinical & Non Clinical**
 {% endstep %}
 
 {% step %}
-## Enter your username
+## Enter your email
 {% endstep %}
 
 {% step %}
@@ -26,26 +26,23 @@ Use this guide for day-to-day admin tasks.
 {% endstep %}
 
 {% step %}
+## Optional: select **Remember me**
+{% endstep %}
+
+{% step %}
 ## Click **Login**
+{% endstep %}
+
+{% step %}
+## Select **Administrator**
 {% endstep %}
 
 {% step %}
 ## Open the admin dashboard
 
-The system shows features based on your access level.
+The system opens the **Clinical & Non Clinical Dashboard** with administrator access.
 {% endstep %}
 {% endstepper %}
-
-</details>
-
-<details>
-
-<summary>Cannot log in</summary>
-
-* Check your username and password.
-* Confirm your internet connection.
-* Confirm your account has not been removed by another administrator.
-* Contact another administrator if access still fails.
 
 </details>
 
@@ -79,34 +76,42 @@ The system shows features based on your access level.
 
 {% stepper %}
 {% step %}
-## Open **Settings**
+## Open the **Staff Search and Retrieval Screen**
 {% endstep %}
 
 {% step %}
-## Open **User Management**
+## Click **Register New Staff**
 {% endstep %}
 
 {% step %}
-## Click **Add User**
+## Select the staff role
+
+* Register Doctor
+* Register Nurse
+* Register Admin
+* Cashier
 {% endstep %}
 
 {% step %}
-## Enter staff details
+## Complete **Personal Information**
 {% endstep %}
 
 {% step %}
-## Assign a role
-
-* Doctor
-* Nurse
-* Receptionist
-* Admin
+## Complete **Employment Information**
 {% endstep %}
 
 {% step %}
-## Click **Save**
+## Complete **Account Setup**
+{% endstep %}
 
-The new staff user can sign in after the account is created.
+{% step %}
+## Review the details in **Review & Confirm**
+{% endstep %}
+
+{% step %}
+## Submit the registration
+
+The success screen confirms the new staff account.
 {% endstep %}
 {% endstepper %}
 
@@ -118,11 +123,7 @@ The new staff user can sign in after the account is created.
 
 {% stepper %}
 {% step %}
-## Open **Settings**
-{% endstep %}
-
-{% step %}
-## Open **User Management**
+## Open the **Staff Search and Retrieval Screen**
 {% endstep %}
 
 {% step %}
@@ -152,11 +153,7 @@ The user can no longer sign in after removal.
 
 {% stepper %}
 {% step %}
-## Open **Settings**
-{% endstep %}
-
-{% step %}
-## Open **User Management**
+## Open the **Staff Search and Retrieval Screen**
 {% endstep %}
 
 {% step %}
@@ -175,34 +172,6 @@ The user can no longer sign in after removal.
 ## Confirm the restoration
 
 The user can sign in again after the account is restored.
-{% endstep %}
-{% endstepper %}
-
-</details>
-
-***
-
-## Access issues
-
-<details>
-
-<summary>Help a staff user who cannot log in</summary>
-
-{% stepper %}
-{% step %}
-## Confirm the username and password
-{% endstep %}
-
-{% step %}
-## Confirm the internet connection is stable
-{% endstep %}
-
-{% step %}
-## Check whether the account is active in **User Management**
-{% endstep %}
-
-{% step %}
-## Restore the account if it was removed
 {% endstep %}
 {% endstepper %}
 
