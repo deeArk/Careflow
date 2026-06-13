@@ -1,12 +1,12 @@
 # STAFF\_USER\_GUIDE
 
-## CareFlow Staff Help Center
+CareFlow is a clinical workflow management platform that enables healthcare providers to efficiently manage patient flow, from registration and assessment to treatment and care completion.
 
-CareFlow is a clinical workflow system designed to manage patient flow from registration to completion.
+The system is designed to streamline healthcare operations, improve patient experience, and ensure that every patient follows a structured clinical workflow.
 
 All patients follow this flow:
 
-**Registration → Queue → Call Patient → Consultation → Vitals → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call Patient → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
 ***
 
@@ -16,18 +16,33 @@ All patients follow this flow:
 
 <summary>Register a New Patient</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open **Registration**
+{% endstep %}
 
-1. Open **Registration**
-2. Click **New Patient**
-3. Enter patient details:
-   * Full Name
-   * Date of Birth
-   * Gender
-   * Phone Number
-   * Address (optional)
-4. Click **Save**
-5. System creates patient profile
+{% step %}
+## Click **New Patient**
+{% endstep %}
+
+{% step %}
+## Enter patient details
+
+* Full Name
+* Date of Birth
+* Gender
+* Phone Number
+* Address (optional)
+{% endstep %}
+
+{% step %}
+## Click **Save**
+{% endstep %}
+
+{% step %}
+## System creates patient profile
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -35,12 +50,23 @@ All patients follow this flow:
 
 <summary>Search Patient</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Registration
+{% endstep %}
 
-1. Open Registration
-2. Enter patient name or phone number
-3. Select patient from results
-4. Open patient profile
+{% step %}
+## Enter patient name or phone number
+{% endstep %}
+
+{% step %}
+## Select patient from results
+{% endstep %}
+
+{% step %}
+## Open patient profile
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -52,14 +78,31 @@ All patients follow this flow:
 
 <summary>Add Patient to Queue</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open patient profile
+{% endstep %}
 
-1. Open patient profile
-2. Click **Add to Queue**
-3. Select department
-4. Choose priority (Normal / High / Emergency)
-5. Click **Confirm**
-6. Patient appears in Queue Dashboard
+{% step %}
+## Click **Add to Queue**
+{% endstep %}
+
+{% step %}
+## Select department
+{% endstep %}
+
+{% step %}
+## Choose priority (Normal / High / Emergency)
+{% endstep %}
+
+{% step %}
+## Click **Confirm**
+{% endstep %}
+
+{% step %}
+## Patient appears in Queue Dashboard
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -67,14 +110,20 @@ All patients follow this flow:
 
 <summary>View Queue Status</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Queue Dashboard
+{% endstep %}
 
-1. Open Queue Dashboard
-2. View patient statuses:
-   * Waiting
-   * Called
-   * In Consultation
-   * Completed
+{% step %}
+## View patient statuses
+
+* Waiting
+* Called
+* In Consultation
+* Completed
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -86,13 +135,27 @@ All patients follow this flow:
 
 <summary>Call Patient into Consultation</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Queue Dashboard
+{% endstep %}
 
-1. Open Queue Dashboard
-2. Locate patient in Waiting list
-3. Click **Call**
-4. System updates status to **Called**
-5. Patient is notified to proceed
+{% step %}
+## Locate patient in Waiting list
+{% endstep %}
+
+{% step %}
+## Click **Call**
+{% endstep %}
+
+{% step %}
+## System updates status to **Called**
+{% endstep %}
+
+{% step %}
+## Patient is notified to proceed
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -100,11 +163,19 @@ All patients follow this flow:
 
 <summary>Recall Patient</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Locate patient in Called list
+{% endstep %}
 
-1. Locate patient in Called list
-2. Click **Recall**
-3. System re-sends notification
+{% step %}
+## Click **Recall**
+{% endstep %}
+
+{% step %}
+## System re-sends notification
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -116,11 +187,19 @@ All patients follow this flow:
 
 <summary>Start Consultation</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Select patient from Called list
+{% endstep %}
 
-1. Select patient from Called list
-2. Click **Start Consultation**
-3. Patient status changes to **In Consultation**
+{% step %}
+## Click **Start Consultation**
+{% endstep %}
+
+{% step %}
+## Patient status changes to **In Consultation**
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -132,18 +211,33 @@ All patients follow this flow:
 
 <summary>Record Patient Vitals</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Consultation
+{% endstep %}
 
-1. Open Consultation
-2. Click **Vitals**
-3. Click **Add Vitals**
-4. Enter:
-   * Blood Pressure
-   * Temperature
-   * Pulse Rate
-   * Oxygen Saturation
-   * Weight
-5. Click **Save**
+{% step %}
+## Click **Vitals**
+{% endstep %}
+
+{% step %}
+## Click **Add Vitals**
+{% endstep %}
+
+{% step %}
+## Enter
+
+* Blood Pressure
+* Temperature
+* Pulse Rate
+* Oxygen Saturation
+* Weight
+{% endstep %}
+
+{% step %}
+## Click **Save**
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -155,11 +249,19 @@ All patients follow this flow:
 
 <summary>Record Clinical Notes</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Enter symptoms
+{% endstep %}
 
-1. Enter symptoms
-2. Add diagnosis
-3. Save notes
+{% step %}
+## Add diagnosis
+{% endstep %}
+
+{% step %}
+## Save notes
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -167,12 +269,23 @@ All patients follow this flow:
 
 <summary>Prescribe Medication</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Click **Add Prescription**
+{% endstep %}
 
-1. Click **Add Prescription**
-2. Select medication
-3. Enter dosage and duration
-4. Save
+{% step %}
+## Select medication
+{% endstep %}
+
+{% step %}
+## Enter dosage and duration
+{% endstep %}
+
+{% step %}
+## Save
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -180,11 +293,19 @@ All patients follow this flow:
 
 <summary>Request Lab Test</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Click **Lab Request**
+{% endstep %}
 
-1. Click **Lab Request**
-2. Select test type
-3. Submit request
+{% step %}
+## Select test type
+{% endstep %}
+
+{% step %}
+## Submit request
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -196,12 +317,23 @@ All patients follow this flow:
 
 <summary>Add Service</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Consultation
+{% endstep %}
 
-1. Open Consultation
-2. Click **Add Service**
-3. Select service type
-4. Confirm selection
+{% step %}
+## Click **Add Service**
+{% endstep %}
+
+{% step %}
+## Select service type
+{% endstep %}
+
+{% step %}
+## Confirm selection
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -213,12 +345,23 @@ All patients follow this flow:
 
 <summary>Generate Invoice</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open patient record
+{% endstep %}
 
-1. Open patient record
-2. Click **Create Invoice**
-3. System auto-fills services
-4. Click **Generate Invoice**
+{% step %}
+## Click **Create Invoice**
+{% endstep %}
+
+{% step %}
+## System auto-fills services
+{% endstep %}
+
+{% step %}
+## Click **Generate Invoice**
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -226,12 +369,23 @@ All patients follow this flow:
 
 <summary>Edit Invoice</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Invoice
+{% endstep %}
 
-1. Open Invoice
-2. Click **Edit**
-3. Modify items
-4. Save changes
+{% step %}
+## Click **Edit**
+{% endstep %}
+
+{% step %}
+## Modify items
+{% endstep %}
+
+{% step %}
+## Save changes
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -243,13 +397,27 @@ All patients follow this flow:
 
 <summary>Record Payment</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Invoice
+{% endstep %}
 
-1. Open Invoice
-2. Click **Record Payment**
-3. Select payment method
-4. Enter amount
-5. Confirm payment
+{% step %}
+## Click **Record Payment**
+{% endstep %}
+
+{% step %}
+## Select payment method
+{% endstep %}
+
+{% step %}
+## Enter amount
+{% endstep %}
+
+{% step %}
+## Confirm payment
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -257,11 +425,19 @@ All patients follow this flow:
 
 <summary>Issue Receipt</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open payment
+{% endstep %}
 
-1. Open payment
-2. Click **Generate Receipt**
-3. Download or print
+{% step %}
+## Click **Generate Receipt**
+{% endstep %}
+
+{% step %}
+## Download or print
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -269,11 +445,19 @@ All patients follow this flow:
 
 <summary>Close Invoice</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Confirm full payment
+{% endstep %}
 
-1. Confirm full payment
-2. Click **Close Invoice**
-3. Mark as completed
+{% step %}
+## Click **Close Invoice**
+{% endstep %}
+
+{% step %}
+## Mark as completed
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -285,12 +469,23 @@ All patients follow this flow:
 
 <summary>Complete Patient Visit</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Ensure consultation is completed
+{% endstep %}
 
-1. Ensure consultation is completed
-2. Ensure invoice is paid
-3. Click **Mark as Completed**
-4. Patient exits workflow
+{% step %}
+## Ensure invoice is paid
+{% endstep %}
+
+{% step %}
+## Click **Mark as Completed**
+{% endstep %}
+
+{% step %}
+## Patient exits workflow
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -302,17 +497,32 @@ All patients follow this flow:
 
 <summary>Create Staff User</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Open Settings
+{% endstep %}
 
-1. Open Settings
-2. Click **Add User**
-3. Enter staff details
-4. Assign role:
-   * Doctor
-   * Nurse
-   * Receptionist
-   * Admin
-5. Save user
+{% step %}
+## Click **Add User**
+{% endstep %}
+
+{% step %}
+## Enter staff details
+{% endstep %}
+
+{% step %}
+## Assign role
+
+* Doctor
+* Nurse
+* Receptionist
+* Admin
+{% endstep %}
+
+{% step %}
+## Save user
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -324,11 +534,19 @@ All patients follow this flow:
 
 <summary>Report an Issue</summary>
 
-#### Steps:
+{% stepper %}
+{% step %}
+## Contact system administrator
+{% endstep %}
 
-1. Contact system administrator
-2. Submit support ticket
-3. Refresh system and retry action
+{% step %}
+## Submit support ticket
+{% endstep %}
+
+{% step %}
+## Refresh system and retry action
+{% endstep %}
+{% endstepper %}
 
 </details>
 
@@ -338,6 +556,6 @@ All patients follow this flow:
 
 All patients must follow:
 
-**Registration → Queue → Call → Consultation → Vitals → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
-No step should be skipped.
+No step should be skipped unless explicity authorized by a system administrator or onfigure workfloe policy..
