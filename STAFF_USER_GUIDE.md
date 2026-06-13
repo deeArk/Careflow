@@ -6,7 +6,7 @@ The system is designed to streamline healthcare operations, improve patient expe
 
 All patients follow this flow:
 
-**Registration → Queue → Call Patient → Consultation → Vitals → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call Patient → Vitals → Consultation  → Services → Invoice → Payment → Completion**
 
 ---
 
@@ -298,6 +298,6 @@ All patients follow this flow:
 
 All patients must follow:
 
-**Registration → Queue → Call → Consultation → Vitals → Services → Invoice → Payment → Completion**
+**Registration → Queue → Call → Vitals → Consultation → Services → Invoice → Payment → Completion**
 
-No step should be skipped.
+No step should be skipped unless explicity authorized by a system administrator or onfigure workfloe policy..
