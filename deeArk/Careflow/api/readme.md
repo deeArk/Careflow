@@ -1,8 +1,8 @@
-# README
+# API overview
 
 ## CareFlow API
 
-> A secure RESTful API for managing healthcare operations, including patient records, appointments, consultations, billing, payments, and reporting.
+A secure REST API for healthcare operations.
 
 ***
 
