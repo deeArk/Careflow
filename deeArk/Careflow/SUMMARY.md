@@ -3,7 +3,7 @@
 * [API](README.md)
   * [README](api/readme.md)
   * [API Overview](api/readme-1.md)
-  * [Release notes](api/release-notes.md)
+  * [Release Notes](api/release-notes.md)
 * [Guides](<README (1).md>)
   * [Staff User Guide](readme/staff-user-guide.md)
   * [Admin Guide](readme/admin_guide.md)

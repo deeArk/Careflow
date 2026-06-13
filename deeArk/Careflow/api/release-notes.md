@@ -1,6 +1,6 @@
-# Release notes
+# Release Notes
 
-## Release notes
+## Release Notes
 
 Track API changes by version.
 
