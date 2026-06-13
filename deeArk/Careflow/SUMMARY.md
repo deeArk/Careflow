@@ -10,4 +10,4 @@
 
 ## Support
 
-* [Help center](support/help_center.md)
+* [Support center](support/help_center.md)

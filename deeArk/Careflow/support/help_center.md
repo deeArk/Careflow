@@ -1,6 +1,6 @@
-# HELP\_CENTER
+# Support center
 
-## CareFlow Help Center (Outpatient System)
+## CareFlow Support Center
 
 ### Overview
 
