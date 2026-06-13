@@ -1,6 +1,8 @@
-#  CareFlow Staff Help Center
+#  CareFlow Staff User Guide
 
-CareFlow is a clinical workflow system designed to manage patient flow from registration to completion.
+CareFlow is a clinical workflow management platform that enables healthcare providers to efficiently manage patient flow, from registration and assessment to treatment and care completion.
+
+The system is designed to streamline healthcare operations, improve patient experience, and ensure that every patient follows a structured clinical workflow.
 
 All patients follow this flow:
 
