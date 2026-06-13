@@ -44,7 +44,7 @@ Use the [Staff User Guide](staff-user-guide.md) for day-to-day patient workflows
 {% step %}
 ## Open the admin dashboard
 
-The system opens the **Clinical & Non Clinical Dashboard** with administrator access.
+The system opens the **Clinical & Non Clinical Dashboard** with administrator access. The system opens the **Dashboard** with administrator access.
 {% endstep %}
 {% endstepper %}
 
